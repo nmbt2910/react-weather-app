@@ -5,6 +5,10 @@
 .App-light {
   background-color: var(--main-bg-color);
   color: var(--primary-text-color);
-
   overflow: hidden;
+
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 }

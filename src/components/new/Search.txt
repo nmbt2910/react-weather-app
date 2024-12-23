@@ -24,25 +24,25 @@ function Search() {
 
   return (
     <>
-      <div className="search-container">
-        <div className="search-icon">
-          <i className="bi bi-search"></i>
+      <div className='search-container'>
+        <div className='search-icon'>
+          <i className='bi bi-search'></i>
         </div>
-        <div className="search-input">
+        <div className='search-input'>
           <input
-            type="text"
-            name="search-city"
-            placeholder="Search city ..."
+            type='text'
+            name='search-city'
+            placeholder='Search city ...'
             value={text}
             onChange={onSearch}
           />
         </div>
         {openSearchResults && (
-          <div className="search-results">
-            <div className="results-container">
+          <div className='search-results'>
+            <div className='results-container'>
               {searchResults.map((place) => (
                 <div
-                  className="result"
+                  className='result'
                   key={place.place_id}
                   onClick={() => changePlace(place)}
                 >

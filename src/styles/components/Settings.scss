@@ -6,9 +6,9 @@
 
   .theme-toggler {
     $size: 25px;
+
     .theme-buttons {
       cursor: pointer;
-
       display: flex;
       position: relative;
       height: $size;
@@ -20,34 +20,34 @@
         position: absolute;
         top: $size;
         transition: top 0.5s ease-in-out;
+
         &.active {
           top: 0;
         }
       }
     }
   }
+
   .settings-btn {
     margin-left: 1rem;
     cursor: pointer;
   }
+
   .settings-menu {
     position: absolute;
     z-index: 2;
     top: calc($header-height + 0.25rem);
     right: 2rem;
-
     border-radius: 0.5rem;
     background-color: var(--header-bg-color);
     width: 250px;
-
     padding: 0.5rem;
     font-size: 1rem;
-
     @include no-text-select;
-
     transform: scale(0.1);
     visibility: hidden;
     transition: all 0.2s ease-in-out;
+
     &.open {
       transform: scale(1);
       visibility: visible;
@@ -60,6 +60,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 0.5rem;
+
         .system {
           display: flex;
           align-items: center;
@@ -69,7 +70,6 @@
           margin: 0.25rem 0.25rem 0.25rem 0;
           border: 1px solid var(--border-color);
           border-radius: 0.5rem;
-
           cursor: pointer;
 
           &.active {
@@ -78,6 +78,16 @@
           }
         }
       }
+    }
+  }
+
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .settings-menu {
+      right: 1rem;
+      width: 90%;
     }
   }
 }

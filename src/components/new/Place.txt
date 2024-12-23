@@ -6,9 +6,8 @@ function Place() {
 
   return (
     <div className='Place'>
-      <i className='bi bi-geo-alt-fill'></i> 
-      <b>{place.name || 'Loading location...'}</b>, {' '}
-      {place.country || 'Unknown'}
+      <i className='bi bi-geo-alt-fill'></i> <b>{place.name}</b>,{' '}
+      {place.country}
     </div>
   );
 }

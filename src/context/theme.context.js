@@ -11,17 +11,25 @@ function ThemeProvider({ children }) {
   };
 
   useEffect(() => {
-    const savedTheme = JSON.parse(localStorage.getItem(THEME_KEY));
-    if (savedTheme !== null) {
-      setDark(savedTheme);
-      return;
+    try {
+      const savedTheme = localStorage.getItem(THEME_KEY);
+      if (savedTheme !== null) {
+        const parsedTheme = JSON.parse(savedTheme);
+        if (typeof parsedTheme === 'boolean') {
+          setDark(parsedTheme);
+          return;
+        }
+      }
+    } catch (error) {
+      console.error('Failed to parse theme from localStorage:', error);
     }
 
     const isSystemThemeDark = window.matchMedia(
       '(prefers-color-scheme: dark)'
     ).matches;
-    setDark(isSystemThemeDark === true);
+    setDark(isSystemThemeDark);
   }, []);
+
   return (
     <ThemeContext.Provider
       value={{ dark, setDark, saveThemeToLocalStorage }}

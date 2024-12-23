@@ -4,11 +4,20 @@
   margin: 0 7rem;
   padding: 20px 0;
   height: $main-height;
-
   overflow-y: auto;
   overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 
+  .Main::-webkit-scrollbar {
+    display: none;
+  }
+  // Responsive adjustments
   @media only screen and (max-width: 821px) {
     margin: 0 2rem;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin: 0 1rem;
   }
 }
