@@ -3,6 +3,17 @@
 .Settings {
   display: flex;
   font-size: 1.25rem;
+  justify-content: space-between; /* Distribute buttons evenly */
+  align-items: center; /* Center buttons vertically */
+  gap: 2rem; /* Equal spacing between buttons */
+  padding: 0.5rem; /* Optional padding for better layout */
+  width: 100%; /* Ensure the container takes full width */
+
+  .theme-toggler,
+  .settings-btn {
+    display: flex;
+    align-items: center; /* Align icon vertically */
+  }
 
   .theme-toggler {
     $size: 25px;
@@ -29,13 +40,12 @@
   }
 
   .settings-btn {
-    margin-left: 1rem;
     cursor: pointer;
   }
 
   .settings-menu {
     position: absolute;
-    z-index: 2;
+    z-index: 5; // Ensure above other elements
     top: calc($header-height + 0.25rem);
     right: 2rem;
     border-radius: 0.5rem;
@@ -44,12 +54,14 @@
     padding: 0.5rem;
     font-size: 1rem;
     @include no-text-select;
-    transform: scale(0.1);
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
     visibility: hidden;
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     &.open {
-      transform: scale(1);
+      opacity: 1;
+      transform: translateY(0) scale(1);
       visibility: visible;
     }
 
@@ -81,9 +93,18 @@
     }
   }
 
-  // Responsive adjustments
+  // Mobile responsiveness
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: row; /* Ensure horizontal layout */
+    justify-content: space-between; /* Evenly space buttons */
+    width: 100%; /* Ensure container takes full width */
+    gap: 1rem; /* Smaller gap on mobile */
+    
+    .theme-toggler,
+    .settings-btn {
+      width: auto; /* Ensure buttons are not stretched */
+      justify-content: center; /* Center the icons inside each button */
+    }
 
     .settings-menu {
       right: 1rem;

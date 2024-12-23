@@ -3,6 +3,7 @@ $height: 250px;
 .CurrentWeather {
   display: flex;
   align-items: center;
+  margin-top: 2rem;  /* Added margin for space between the header and the widget */
 
   @media screen and (max-width: 745px) {
     flex-direction: column;

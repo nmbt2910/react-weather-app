@@ -6,11 +6,8 @@ import WeatherContext from '../context/weather.context';
 
 function Settings() {
   const [openSettings, setOpenSettings] = useState(false);
-  const { dark, setDark, saveThemeToLocalStorage } = useContext(
-    ThemeContextContext
-  );
-  const { measurementSystem, setMeasurementSystem } =
-    useContext(WeatherContext);
+  const { dark, setDark, saveThemeToLocalStorage } = useContext(ThemeContextContext);
+  const { measurementSystem, setMeasurementSystem } = useContext(WeatherContext);
 
   const changeMeasurementSystem = (system) => {
     setMeasurementSystem(system);
