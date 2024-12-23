@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = '323bb0a8e4mshd0876b49b587693p1306e7jsn50aadab22ab6';
 console.log(API_KEY);
 
 // Function to fetch the nearest place based on coordinates
