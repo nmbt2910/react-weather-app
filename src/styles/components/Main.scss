@@ -3,15 +3,17 @@
 .Main {
   margin: 0 7rem;
   padding: 20px 0;
-  height: $main-height;
+  height: 100vh; /* Use viewport height */
   overflow-y: auto;
   overflow-x: hidden;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  box-sizing: border-box; /* Ensure padding/border don't affect layout */
 
   .Main::-webkit-scrollbar {
     display: none;
   }
+
   // Responsive adjustments
   @media only screen and (max-width: 821px) {
     margin: 0 2rem;

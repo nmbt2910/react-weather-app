@@ -4,6 +4,7 @@ import Forecast from './Forecast';
 import { useContext } from 'react';
 import WeatherContext from '../context/weather.context';
 import Loader from './Loader';
+import Header from './Header';
 
 function Main() {
   const { loading, currentWeather, dailyForecast, hourlyForecast } =
@@ -11,6 +12,7 @@ function Main() {
 
   return (
     <div className='Main'>
+      <Header />
       {loading ? (
         <Loader />
       ) : (
