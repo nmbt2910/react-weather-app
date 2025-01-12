@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '47d1c3129amshb479f3e78adfd5ep1c9721jsn7305bb989315';
+const API_KEY = '79b12584b5mshc3f7e2a4f82dccep169a30jsn5936c557c87b';
 console.log(API_KEY);
 
 // Function to fetch the nearest place based on coordinates
