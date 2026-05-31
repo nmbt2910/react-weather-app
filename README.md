@@ -1,10 +1,21 @@
 # ReactJS Weather App
 
+<div align="center">
+
+[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![Sass](https://img.shields.io/badge/Sass-1.77.6-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![Axios](https://img.shields.io/badge/Axios-1.7.2-5A29E4?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
+[![License-MIT](https://img.shields.io/badge/License-MIT-4c1?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
 An elegant, modern, responsive, and performance-optimized weather forecasting application built using ReactJS, Sass, Context API, and integrated with the Meteosource Weather API.
+
+[Explore Codebase](#9-project-structure) • [View Architecture](#7-system-architecture) • [Installation Guide](#15-installation-guide)
+
+</div>
 
 ---
 
-# 🇺🇸 English Version
+# <img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English" />
 
 ## 1. Project Title
 **ReactJS Weather App** — A professional-grade, context-driven weather forecasting application designed for instant localized meteorological insights, featuring dynamic unit conversion, search auto-completion, and automatic theme adaptation.
@@ -405,7 +416,7 @@ The ReactJS Weather App is a clean, practical frontend weather dashboard. By uti
 
 ---
 
-# 🇻🇳 Phiên Bản Tiếng Việt
+# <img src="https://img.shields.io/badge/Ng%C3%B4n_Ng%E1%BB%AF-Ti%E1%BA%BFng_Vi%E1%BB%87t-red?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Tiếng Việt" />
 
 ## 1. Tiêu Đề Dự Án
 **ReactJS Weather App** — Ứng dụng dự báo thời tiết chuyên nghiệp, sử dụng kiến trúc Context API của React, được thiết kế để cung cấp thông tin khí tượng tức thì theo vị trí địa lý, hỗ trợ chuyển đổi đơn vị đo linh hoạt, tự động hoàn thành từ khóa tìm kiếm và thích ứng giao diện theo hệ điều hành.
@@ -413,7 +424,7 @@ The ReactJS Weather App is a clean, practical frontend weather dashboard. By uti
 ---
 
 ## 2. Tổng Quan Dự Án
-ReactJS Weather App là một ứng dụng web phía client, giúp người dùng tra cứu thông tin thời tiết thời gian thực và dự báo tương lai trên toàn cầu. Được xây dựng như một dự án mẫu minh họa cho lập trình giao diện hiện đại, ứng dụng kết nối trực tiếp với nhà cung cấp dữ liệu thời tiết bên thứ ba và hiển thị dữ liệu qua các thành phần React linh hoạt.
+ReactJS Weather App là một ứng dụng web phía client, giúp người dùng tra cứu thông tin thời tiết thời gian thực và dự báo tương lai trên toàn cầu. Được xây dựng như một dự án mẫu minh họa cho giao diện hiện đại, ứng dụng kết nối trực tiếp với nhà cung cấp dữ liệu thời tiết bên thứ ba và hiển thị dữ liệu qua các thành phần React linh hoạt.
 
 Nhờ tích hợp định vị của trình duyệt, ứng dụng sẽ xác định vị trí của người dùng ngay khi khởi chạy để tải thông tin thời tiết địa phương. Ngoài ra, người dùng có thể tìm kiếm bất kỳ thành phố nào, xem chi tiết tình trạng khí quyển hiện tại, theo dõi xu hướng thời tiết theo giờ trong ngày, cũng như xem dự báo chi tiết các ngày tiếp theo. Giao diện được thiết kế tối ưu, hỗ trợ hai chế độ Sáng/Tối (Light/Dark Mode), tích hợp hiệu ứng cuộn ngang mượt mà cùng bộ biểu tượng thời tiết SVG tùy biến nhằm đem lại trải nghiệm tốt nhất.
 
